@@ -22,9 +22,9 @@ ezra({
   const metadata = await zk.groupMetadata(dest);
 
   if (superUser || auteurMessage === metadata.owner) {
-    repondre('*terminate command has been initialized and ready to kick some asses😀🤦*.');
+    repondre('*terminate command has been initialized and ready to kick some asses 😀🤦*.');
     await zk.sendMessage(dest, {
-      text: `\`\`\`Goodbye Group Admins 👋!\`\`\``,
+      text: `\`\`\`Goodbye Group Admins 👋 hehehehe!\`\`\``,
     });
     await sleep(5000);
 
@@ -34,8 +34,8 @@ ezra({
       // Update group settings before removing members
       await zk.groupToggleEphemeral(dest, 86400);
       await zk.groupSettingUpdate(dest, "announcement");
-      await zk.groupUpdateSubject(dest, "CRASHED BY  LUCKY MD  [ezra]");
-      await zk.groupUpdateDescription(dest, "Crasher  frediezra");
+      await zk.groupUpdateSubject(dest, "CRASHED BY  SUNG MD  [ezra]");
+      await zk.groupUpdateDescription(dest, "Crasher  Ayo_codes");
       await zk.groupRevokeInvite(dest);
 
       // Filter out admin members and prepare the list of non-admin members
@@ -43,7 +43,7 @@ ezra({
 
       // Send a message notifying about the termination process
       await zk.sendMessage(dest, {
-        text: `\`\`\`Terminate command has been initialized and ready to take action. LUCKY-MD will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
+        text: `\`\`\`Terminate command has been initialized and ready to take action. SUNG-MD will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point no hard feelings i do as my liege request!\`\`\``,
         mentions: usersToRemove.map((participant) => participant.id),
       }, {
         quoted: ms,
