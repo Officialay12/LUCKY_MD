@@ -33,13 +33,13 @@ ezra(
     const end = new Date().getTime();
     const ping = end - start;
     await zk.sendMessage(dest, {
-      text: `*Pong*
+      text: `*My liege*
  *${ping} ms*`, edit: {
         id: msg.key.id, remoteJid: dest
       }});
     await zk.sendMessage(dest, {
       react: {
-        text: "⚙️", key: ms.key
+        text: "🐱‍👤", key: ms.key
       }})
   }
 )
