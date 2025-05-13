@@ -7,15 +7,15 @@ ezra({ nomCom: "lydea", categorie: "IA", reaction:"🧜", active: isIdeaCommandE
   const message = arg.join(' ');
 
   // Greetings
-  const greetings = ["Hello!", "Hi there!", "Greetings!", "Hey!", "Nice to see you!"];
+  const greetings = ["Hello!","wagwan gee", "sup homie", "Hi there!", "Greetings!", "Hey!", "Nice to see you!"];
   const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
 
   // Introduction
   const introduction = [
-    "I'm Assistant, a helpful bot. I'm here to assist you with any questions or tasks you have.",
-    "Welcome! I'm Assistant, your friendly bot here to help you with anything you need.",
-    "Hi! I'm Assistant, your personal AI assistant. How can I assist you today?",
-    "Greetings! I'm Assistant, ready to assist you with your queries and tasks."
+   "I am the Shadow Monarch’s Assistant, a powerful entity bound to aid you. Speak your will, and I shall fulfill your requests.",
+   "Welcome, Hunter. I am your loyal Assistant, standing ready to support you in battle and knowledge. State your command.",
+   "Hmph. I am Assistant, a being forged in the shadows to serve. What task requires my strength?",
+   "You’ve summoned me, Assistant, a sovereign of aid. Speak, and I shall answer."
   ];
   const randomIntroduction = introduction[Math.floor(Math.random() * introduction.length)];
 
