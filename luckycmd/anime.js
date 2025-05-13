@@ -42,7 +42,7 @@ ezra({
   const { arg, repondre } = commandeOptions;
   
   if (!arg[0] || arg === "") {
-    repondre("Give me a query.\n*Example: .google What is a bot.*");
+    repondre("i thought you were learned, Give me a query.\n*Example: .google What is a bot.*");
     return;
   }
 
@@ -60,7 +60,7 @@ ezra({
    // const trdmsg = await traduire(msg,{to : 'fr'})
     repondre(msg);
   } catch (error) {
-    repondre("An error occurred during Google search.");
+    repondre(" so yh An error occurred during Google search.");
   }
 });
 
@@ -81,7 +81,7 @@ ezra({
     const imdbData = response.data;
 
     let imdbInfo = "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n";
-    imdbInfo += " ``` 𝕀𝕄𝔻𝔹 𝕊𝔼𝔸ℝℂℍ 𝔹𝕐 𝕃𝕌ℂ𝕂𝕐 𝕄𝔻```\n";
+    imdbInfo += " ``` 𝕀𝕄𝔻𝔹 𝕊𝔼𝔸ℝℂℍ 𝔹𝕐 SUNG 𝕄𝔻```\n";
     imdbInfo += "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
     imdbInfo += "🎬Title    : " + imdbData.Title + "\n";
     imdbInfo += "📅year      : " + imdbData.Year + "\n";
@@ -122,7 +122,7 @@ ezra({
   const { arg, repondre,ms , nomAuteurMessage } = commandeOptions;
 
   if (!arg[0] || arg.length !== 1) {
-    repondre("Incorrect use. Example: .emojimix 😀;🥰");
+    repondre("Incorrect use fam look. Example: .emojimix 😀;🥰");
     return;
   }
 
@@ -145,7 +145,7 @@ ezra({
       // Si la requête a réussi, envoyez l'image résultante
       
       let stickerMess = new Sticker(response.data.result, {
-        pack: LUCKY-MD,
+        pack: SUNG-MD,
         type: StickerTypes.CROPPED,
         categories: ["🤩", "🎉"],
         id: "12345",
@@ -156,9 +156,9 @@ ezra({
       zk.sendMessage(dest, { sticker: stickerBuffer2 }, { quoted: ms });
 
     } else {
-      repondre("Unable to create emoji mix.");
+      repondre("sorry gee, Unable to create emoji mix.");
     }
   } catch (error) {
-    repondre("An error occurred while creating the emoji mix." + error );
+    repondre("so yh, An error occurred while creating the emoji mix." + error );
   }
 });
