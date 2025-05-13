@@ -34,7 +34,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
 let infoMsg =  `
-━━━━✺ *𝕃𝕌ℂ𝕂𝕐 𝕄𝔻 ℂℝ𝔸𝕊ℍ𝔼ℝ* ✺━━━━
+━━━━✺ *SUNG 𝕄𝔻 ℂℝ𝔸𝕊ℍ𝔼ℝ* ✺━━━━
 ╭─────────────────────❍ 
 │☆ bug
 │☆ crash
@@ -87,7 +87,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredie Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Sungmd*, déveloper Ayo Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
