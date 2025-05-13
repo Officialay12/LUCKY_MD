@@ -31,7 +31,7 @@ ezra({ nomCom: "tagall", categorie: 'Group', reaction: "📯" }, async (dest, zk
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *LUCKY-𝐌𝐃*𝕋𝔸𝔾𝔾𝔼𝔻 🌟
+        🌟 *SUNG-𝐌𝐃*𝕋𝔸𝔾𝔾𝔼𝔻 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Autor : *${nomAuteurMessage}* 👋 
@@ -72,7 +72,7 @@ ezra({ nomCom: "link", categorie: 'Group', reaction: "🚜" }, async (dest, zk, 
 
   let mess = `hello ${nomAuteurMessage} , here is the group link for ${nomGroupe} \n
 
-Grp link :${lien} \n\n★𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢  LUCKY 𝚃𝚣`
+Grp link :${lien} \n\n★𝙿𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢  SUNG 𝚃𝚣`
   repondre(mess)
 
 
@@ -121,7 +121,7 @@ ezra({ nomCom: "promote", categorie: 'Group', reaction: "💐" }, async (dest, z
         if (zkad) {
           if (membre) {
             if (admin == false) {
-              var txt = `🎊🎊🎊  @${auteurMsgRepondu.split("@")[0]} rose in rank.\n
+              var txt = `🎊🎊🎊  @${auteurMsgRepondu.split("@")[0]} has ascended beyond their previous rank!\n
                       he/she has been Promote To Admin.`
               await zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "promote");
               zk.sendMessage(dest, { text: txt, mentions: [auteurMsgRepondu] })
@@ -373,21 +373,21 @@ ezra({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) =
       if(arg[0] === 'on') {
 
       
-       if(enetatoui ) { repondre("the antilink is already activated for this group")
+       if(enetatoui ) { repondre("the antilink is already activated for this group if e sure for you drop link")
                     } else {
                   await ajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("the antilink is activated successfully") }
+              repondre("the antilink is activated successfully if e sure for you drop link") }
      
             } else if (arg[0] === "off") {
 
               if (enetatoui) { 
                 await ajouterOuMettreAJourJid(dest , "non");
 
-                repondre("The antilink has been successfully deactivated");
+                repondre("The antilink has been successfully deactivated una get luck sha");
                 
               } else {
-                repondre("antilink is not activated for this group");
+                repondre("antilink is not activated for this group lucky niggas");
               }
             } else if (arg.join('').split("/")[0] === 'action') {
                             
@@ -480,7 +480,7 @@ ezra({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) =
        repondre(error)
     }
 
-  } else { repondre('You are not entitled to this order') ;
+  } else { repondre('You are not entitled to this order weakling') ;
 
   }
 
@@ -660,7 +660,7 @@ ezra({nomCom:"tag",categorie:'Group',reaction:"🎤"},async(dest,zk,commandeOpti
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'LUCKY-MD',
+          pack: 'SUNG-MD',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -767,7 +767,7 @@ ezra({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,commande
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'LUCKY-MD',
+          pack: 'SUNG-MD',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -874,7 +874,7 @@ ezra({nomCom:"htag",categorie:'Group',reaction:"🎤"},async(dest,zk,commandeOpt
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'LUCKY-MD',
+          pack: 'SUNG-MD',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
