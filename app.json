@@ -1,14 +1,14 @@
 {
-  "name": "✧⁠LUCKY_MD✧ MULT DEVICE",
-  "description": "Lucky Whatsapp device bot made by FrediEzra to help Whatsapp users to enjoy while helping..",
+  "name": "✧⁠SUNG_MD✧ MULT DEVICE",
+  "description": "Sung Whatsapp device bot made by Ayo_codes to help Whatsapp users to enjoy while helping..",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://files.catbox.moe/7irwqn.jpeg",
-  "repository": "https://github.com/Fred1e/LUCKY_MD",
+  "logo": "https://files.catbox.moe/amq9a2.png",
+  "repository": "https://github.com/Ayo_codes/LUCKY_MD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -19,7 +19,7 @@
     },
     "AUTO_READ_STATUS": {
       "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
       "AUDIO_REPLY":
@@ -30,12 +30,12 @@
     },
     "AUTO_REPLY": {
       "description": "when enabled it automatically sends  auto reply message to members in your pm",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "AUTO_REACT_STATUS": {
       "description": "Your contact status will be react automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
-      "value": "yes",
+      "value": "no",
       "required": false
     },
     "AUTO_BIO": {
@@ -71,13 +71,13 @@
     },
     "ANTI_CALL_TEXT": {
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
-      "value": "My owner don't receive any call now because it's busy",
+      "value": "im Sung-md, My owner(Ayo-codes) don't receive any call now because it's busy",
       "required": false
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
-      "value": "✧⁠LUCKY_MD✧",
-      "required": false 
+      "value": "✧⁠SUNG_MD✧",
+      "required": true
     },
     "PUBLIC_MODE": {
       "description": "Set 'yes' to make your bot public or 'no' to keep it private",
@@ -101,12 +101,12 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "FrediEzra",
-      "required": false
+      "value": "Ayo_codes",
+      "required": true
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://files.catbox.moe/7irwqn.jpeg",
+      "value": "https://files.catbox.moe/amq9a2.png",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -116,17 +116,17 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '255752593977')",
-      "value": "255752593977",
+      "value": "2349159180375",
       "required": false
     },
     "WARN_COUNT": {
       "description": "Set the warning limit for warning commands",
-      "value": "5",
+      "value": " 3",
       "required": false
     },
     "STARTING_BOT_MESSAGE": {
       "description": "Set 'yes' to display a starting bot message or 'no' to disable it",
-      "value": "no",
+      "value": "yes",
       "required": true
     },
     "PRESENCE": {
@@ -136,7 +136,7 @@
     },
     "ANTI_DELETE_MESSAGE": {
       "description": "Enable anti-delete message (set 'yes' to activate or 'no' to deactivate)",
-      "value": "no",
+      "value": "yes",
       "required": false
     },
     "ANTI_CALL": {
