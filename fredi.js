@@ -70,7 +70,7 @@ setTimeout(() => {
         const callerId = callData[0].from;
         await zk.rejectCall(callId, callerId);
         await zk.sendMessage(callerId, {
-          text: "❗📵I AM LUCKY MD | I REJECT THIS CALL BECAUSE MY OWNER IS NOT AVAILABLE FOR NOW. KINDLY SEND MESSAGE RIGHT NOW."
+          text: "ARISE❗📵I AM SUNG MD | I REJECT THIS CALL BECAUSE MY OWNER IS NOT AVAILABLE FOR NOW. KINDLY SEND MESSAGE RIGHT NOW."
         });
       }
     });
@@ -96,7 +96,7 @@ setTimeout(() => {
 
         if (deletedMessage) {
           const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-          let notification = `*🤦LUCKY ANTIDELETE🤦*`;
+          let notification = `*🤦SUNG ANTIDELETE🤦*`;
           notification += `*Time deleted🌹:* ${new Date().toLocaleString()}`;
           notification += `*Deleted by🌺:* @${deletedBy.split('@')[0]}`;
 
