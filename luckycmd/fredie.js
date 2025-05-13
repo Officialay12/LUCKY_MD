@@ -88,10 +88,10 @@ let menuMsg = `
 ┃⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢁⣴⣿⣿⣿⠗⠄⠄⣿
 ┃⠈⠻⣿⣿⣿⣿⣿⣿⠿⠛⣉⣤⣾⣿⣿⣿⣿⣇⠠⠺⣷⣿
 ┃⣦⣄⣈⣉⣉⣉⣡⣤⣶⣿⣿⣿⣿⣿⣿⣿⠉⠁⣀⣼⣿⣿
-│        *LUCKY MD V7*
+│        *SUNG MD V7*
 ╰─━━━━✣•∞•✣━━━━──❍ 
 
-> ©Fredie projects
+> ©Ayo_codes projects
 
  `;
 
