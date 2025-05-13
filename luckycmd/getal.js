@@ -12,64 +12,50 @@ const { exec } = require("child_process");
 ezra({ nomCom: "getallmembers", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions;
 
-  // Ensure the command is for a group
-  if (!verifGroupe) { 
-    repondre("✋🏿 ✋🏿This command is reserved for groups ❌"); 
-    return; 
-  }
+  if (!verifGroupe) return repondre("✋🏿 This command is reserved for groups ❌");
 
-  // If no arguments, set a default message
-  let mess = arg && arg.trim() ? arg.join(' ') : 'No message provided';
+  let mess = Array.isArray(arg) && arg.length ? arg.join(' ') : 'No message provided';
+  let membresGroupe = verifGroupe && infosGroupe ? infosGroupe.participants || [] : [];
 
-  // Get group participants if it's a group
-  let membresGroupe = verifGroupe ? await infosGroupe.participants : [];
-
-  // Prepare the initial message with group info
   let tag = `========================\n  
-        🌟 *LUCKY-MD* 🌟
+        🌟 *LUCKY-MD GROUP MEMBERS GIDS* 🌟
 ========================\n
-👥 Group : ${nomGroupe} 🚀 
-👤 Author : *${nomAuteurMessage}* 👋 
-📜 Message : *${mess}* 📝
-========================\n\n`;
+> regards frediezra®\n\n`;
 
-  // Emoji array and random selection logic
   const emoji = ['🦴', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$', '😟', '🥵', '🐅'];
-  const random = Math.floor(Math.random() * emoji.length); // Fixed random calculation
+  const randomEmoji = emoji[Math.floor(Math.random() * emoji.length)];
 
-  // Loop through the group members and include their WhatsApp Net ID (JID)
+  let mentions = [];
   membresGroupe.forEach((membre, index) => {
-    tag += `${index + 1}. ${emoji[random]} @${membre.id.user} (${membre.id.user})\n`; // Display JID as the ID
+    let userJid = `${membre.id}`; // Ensure the full JID format
+    tag += `${index + 1}. ${randomEmoji} ${userJid}\n`;
+    mentions.push(userJid);
   });
 
-  // Send the message if user is an admin or super user
   if (verifAdmin || superUser) {
-    zk.sendMessage(dest, { text: tag, mentions: membresGroupe.map(m => m.id) }, { quoted: ms });
+    console.log("Sending message to:", dest);
+    console.log("Message:", tag);
+    console.log("Mentions:", mentions);
+
+    zk.sendMessage(dest, { text: tag, mentions }, { quoted: ms })
+      .then(() => console.log("Message sent successfully"))
+      .catch(err => console.error("Error sending message:", err));
   } else {
-    repondre('Command reserved for admins');
+    repondre("❌ Command reserved for admins.");
   }
 });
 
+// ========================= TAG ADMINS COMMAND ========================= //
 
 ezra({ nomCom: "tagadmin", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions;
 
-  // Ensure command is for a group
-  if (!verifGroupe) { 
-    repondre("✋🏿 ✋🏿this command is reserved for groups ❌"); 
-    return; 
-  }
+  if (!verifGroupe) return repondre("✋🏿 This command is reserved for groups ❌");
 
-  // If no message argument, set a default message
-  let mess = arg && arg.trim() ? arg.join(' ') : 'Aucun Message';
-
-  // Get group participants if it's a group
-  let membresGroupe = verifGroupe ? await infosGroupe.participants : [];
-
-  // Filter out non-admins
+  let mess = Array.isArray(arg) && arg.length ? arg.join(' ') : 'No message provided';
+  let membresGroupe = verifGroupe && infosGroupe ? infosGroupe.participants || [] : [];
   let adminsGroupe = membresGroupe.filter(membre => membre.isAdmin);
 
-  // Prepare the initial message tag
   let tag = `========================\n  
         🌟 *LUCKY-MD* 🌟
 ========================\n
@@ -78,19 +64,25 @@ ezra({ nomCom: "tagadmin", categorie: 'Group', reaction: "📣" }, async (dest, 
 📜 Message : *${mess}* 📝
 ========================\n\n`;
 
-  // Emoji array and random selection logic
   const emoji = ['🦴', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$', '😟', '🥵', '🐅'];
-  const random = Math.floor(Math.random() * emoji.length); // Fixed random calculation
+  const randomEmoji = emoji[Math.floor(Math.random() * emoji.length)];
 
-  // Loop through the admin members only, numbering them from 1 to last
+  let mentions = [];
   adminsGroupe.forEach((admin, index) => {
-    tag += `${index + 1}. ${emoji[random]} @${admin.id.split("@")[0]}\n`;
+    let userJid = `${admin.id}@s.whatsapp.net`; // Ensure the full JID format
+    tag += `${index + 1}. ${randomEmoji} @${userJid}\n`;
+    mentions.push(userJid);
   });
 
-  // Send the message if user is an admin or super user
   if (verifAdmin || superUser) {
-    zk.sendMessage(dest, { text: tag, mentions: adminsGroupe.map(m => m.id) }, { quoted: ms });
+    console.log("Sending message to:", dest);
+    console.log("Message:", tag);
+    console.log("Mentions:", mentions);
+
+    zk.sendMessage(dest, { text: tag, mentions }, { quoted: ms })
+      .then(() => console.log("Message sent successfully"))
+      .catch(err => console.error("Error sending message:", err));
   } else {
-    repondre('command reserved for admins');
+    repondre("❌ Command reserved for admins.");
   }
 });
