@@ -12,20 +12,20 @@ ezra({
     prefixe: _0x1e90cb
   } = _0x2bf6f3;
   try {
-    const _0x3c1805 = ["```⚡ lucky_md Injecting malware⚡```", "```🔐 lucky into device \n 0%```", "```♻️ transfering photos \n █ 10%```", "```♻️ transfer successful \n █ █ 20%```", "```♻️ transfering videos \n █ █ █ 30%```","```♻️ transfer successful \n █ █ █ █ 40%```","```♻️ transfering audio \n █ █ █ █ █ 50%```","```♻️ transfer successful \n █ █ █ █ █ █ 60%```","```♻️ transfering hidden files \n █ █ █ █ █ █ █ 70%```","```♻️ transfer successful \n █ █ █ █ █ █ █ █ 80%```","```♻️ transfering whatsapp chat \n █ █ █ █ █ █ █ █ █ 90%```","```♻️ transfer successful \n █ █ █ █ █ █ █ █ █ █ 100%```","```📲 System hyjacking on process.. \n Conecting to Server```","```🔌 Divice successfully connected... \n Riciving data...```","```💡 Data hyjacked from divice 100% completed \n killing all evidence killing all malwares...```","```🔋 HACKING COMPLETED```","```📤 SENDING PHONE DOCUMENTS```"];
+    const _0x3c1805 = ["```⚡ Sung_md Injecting malware⚡```", "```🔐 Sung into device \n 0%```", "```♻️ transfering photos \n █ 10%```", "```♻️ transfer successful \n █ █ 20%```", "```♻️ transfering videos \n █ █ █ 30%```","```♻️ transfer successful \n █ █ █ █ 40%```","```♻️ transfering audio \n █ █ █ █ █ 50%```","```♻️ transfer successful \n █ █ █ █ █ █ 60%```","```♻️ transfering hidden files \n █ █ █ █ █ █ █ 70%```","```♻️ transfer successful \n █ █ █ █ █ █ █ █ 80%```","```♻️ transfering whatsapp chat \n █ █ █ █ █ █ █ █ █ 90%```","```♻️ transfer successful \n █ █ █ █ █ █ █ █ █ █ 100%```","```📲 System hyjacking on process.. \n Conecting to Server```","```🔌 Device successfully connected... \n Reciving data...```","```💡 Data hijacked from device 100% completed \n killing all evidence killing all malwares...```","```🔋 HACKING COMPLETED```","```📤 SENDING PHONE DOCUMENTS```"];
     for (const _0x4c7ce1 of _0x3c1805) {
       try {
         await _0x988825(_0x4c7ce1);
         await new Promise(_0x5458dc => setTimeout(_0x5458dc, 2000));
       } catch (_0x191491) {
-        console.error("Error sending loading message:", _0x191491);
+        console.error("sorry my liege Error sending loading message:", _0x191491);
       }
     }
-    const _0x452d = "```🗂️ ALL FILES TRANSFERRED```";
+    const _0x452d = "```🗂️ ARISE, ALL FILES TRANSFERRED```";
     try {
       await _0x988825(_0x452d);
     } catch (_0x3842d7) {
-      console.error("Error sending prank message:", _0x3842d7);
+      console.error("tch Error sending prank message:", _0x3842d7);
       return await _0x988825("_🙏 An error occurred while sending the main prank message 🤨_");
     }
     const _0x5ed8e2 = ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1'];
@@ -38,7 +38,7 @@ ezra({
       }
     }
     try {
-      await _0x988825("😏 *VICTIM SYSTEM DEMOLISHED!* 🤔");
+      await _0x988825("😏 *VICTIM SYSTEM DEMOLISHED BY IGRIS!* 🤔");
     } catch (_0x34d0ce) {
       console.error("Error sending final message:", _0x34d0ce);
     }
