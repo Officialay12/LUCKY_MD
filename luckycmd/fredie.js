@@ -37,9 +37,9 @@ let infoMsg =  `
 ━━━━❍ *FREDIE TECH INFO* ❍━━━━
 ╭──━━━━━━━━━━━━━━━━━━━❍ 
 │
-│  _*Support channel by follow*_ ;https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f
-│  _*Join Our WhatsApp group*_ ;https://chat.whatsapp.com/HdrwMccSFIaB5Zi7s9BzN9
-│  _*WhatsApp Contact As*_ ;Https://wa.me/255752593977 
+│  _*Support channel by follow*_ ;https://whatsapp.com/channel/0029VajdUjO7tkj0v3rZHw3q
+│  _*Join Our WhatsApp group*_ ;https://whatsapp.com/channel/0029VajdUjO7tkj0v3rZHw3q
+│  _*WhatsApp Contact As*_ ;Https://wa.me/2349159180375
 │  _*WhatsApp Bot Fork And Star*_ ;https://github.com/Fred1e/LUCKY_MD
 │  _*Telegram Group*_ ;https://t.me/+u3zlb5y6OfxhOTdk
 │  _*Telegram Channel*_ ;https://t.me/FredieTech_BusinessPlace
@@ -99,7 +99,7 @@ let menuMsg = `
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredi Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Sung md*, déveloper Ayo Tech" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -109,7 +109,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Luckymd*, déveloper Fredie Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Sung md*, déveloper Ayo Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
