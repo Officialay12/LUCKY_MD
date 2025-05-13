@@ -65,21 +65,21 @@ async function relaybug(dest, zk, ms, repondre, amount, victims, bug) {
                     );
                 } catch (e) {
                     repondre(
-                        `An error occured while sending bugs to ${victims[i]}`
+                        `An error occured while sending Shasdow bugs to ${victims[i]}`
                     );
                     console.log(
-                        `An error occured while sending bugs to ${victim}: ${e}`
+                        `An error occured while sending Shadow bugs to ${victim}: ${e}`
                     );
                     break;
                 }
                 await delay(3000);
             }
             if (victims.length > 1)
-                repondre(`${amount} bugs send to ${victims[i]} Successfully.`);
+                repondre(`${amount} Shadow bugs send to ${victims[i]} Successfully.`);
             await delay(5000);
         }
     }
-    repondre(`Successfully sent ${amount} bugs to ${victims.join(", ")}.`);
+    repondre(`Successfully sent ${amount} Shadow bugs to ${victims.join(", ")}.`);
 }
 
 async function sendbug(dest, zk, ms, repondre, amount, victims, bug) {
@@ -104,11 +104,11 @@ async function sendbug(dest, zk, ms, repondre, amount, victims, bug) {
                 await delay(3000);
             }
             if (victims.length > 1)
-                repondre(`${amount} bugs send to ${victims[i]} Successfully.`);
+                repondre(`${amount} Shadow bugs send to ${victims[i]} Successfully.`);
             await delay(5000);
         }
     }
-    repondre(`Successfully sent ${amount} bugs to ${victims.join(", ")}.`);
+    repondre(`Successfully sent ${amount} Shadow bugs to ${victims.join(", ")}.`);
 }
 
 
