@@ -51,16 +51,16 @@ ezra({ nomCom: "owner", categorie: "luckymd-devs", reaction: "🚜" }, async (de
   }
 });
 
-ezra({ nomCom: "dev", categorie: "luckymd-devs", reaction: "🚜" }, async (dest, zk, commandeOptions) => {
+ezra({ nomCom: "dev", categorie: "sungmd-devs", reaction: "🚜" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "frediezra", numero: "255620814108" },
-      { nom: "freditech", numero: "255752593977" },
+      { nom: "Ayo_codes", numero: "2349159180375" },
+      { nom: "Sung tech", numero: "2347038517111" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "Uuhh Hellow This Is Lucky Md Dev Contacts Check✅:\n\n";
+    let message = "Uuhh Hellow This Is Sung Md Dev Contacts Check✅:\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
