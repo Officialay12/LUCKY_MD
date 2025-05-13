@@ -31,7 +31,7 @@ async function loading(dest, zk) {
     "*𝕷𝕺𝕬𝕯𝕴𝕹𝕲 ɬɧąŋƙ ყơų🤦*"
   ];
 
-  let { key } = await zk.sendMessage(dest, { text: 'Loading Please Wait' });
+  let { key } = await zk.sendMessage(dest, { text: 'Initializing dungeon Please Wait' });
 
   for (let i = 0; i < lod.length; i++) {
     await zk.sendMessage(dest, { text: lod[i], edit: key });
@@ -81,7 +81,7 @@ ezra({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: 'OKY I AM ALIVE MY FRIEND WORRY OUT',
+        title: 'OKY I AM ALIVE MY FRIEND WHATTU NEED',
         body: conf.OWNER_NAME,
         thumbnailUrl: conf.URL,
         sourceUrl: conf.GURL, // Corrected variable name
