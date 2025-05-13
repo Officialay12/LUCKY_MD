@@ -46,7 +46,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *LUCKY MD 2025*`
+ *SUNG MD 2025*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -74,14 +74,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("Hello Fahm Lucky Md Is A Live 24hrs Enjoy To Use All Time🤗") ; return};
+        if(!superUser) { repondre("Yes My Liege, what cna i do for you, the architect (Ayo_codes)🤗") ; return};
 
-      await   repondre("You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
+      await   repondre("Ode, You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
          repondre("don't do fake thinks :)")
      }
  } else {
 
-    if(!superUser) { repondre ("Uuuhh Only the owner can  modify the alive") ; return};
+    if(!superUser) { repondre ("Uuuhh Only Ayo_codes can  modify the alive") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
@@ -91,7 +91,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre('  Lucky Md Is A Live 24hrs Enjoy To Use All Time🤗. ')
+repondre('  Yes My Liege, what cna i do for you, the architect (Ayo_codes)🤗. ')
 
 }
     });
