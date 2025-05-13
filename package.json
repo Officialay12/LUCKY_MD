@@ -1,6 +1,6 @@
 
  {
-  "name": "LUCKY_MD",
+  "name": "SUNG_MD",
   "version": "2.0.0",
   "description": "",
   "main": "control.js",
@@ -20,7 +20,7 @@
     "whatsapp-bot",
     "frediezra"
    ],
-  "author": "frediezra",
+  "author": "Ayo_codes",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
